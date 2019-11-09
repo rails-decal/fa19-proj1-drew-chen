@@ -21,6 +21,8 @@ This generates a button with the text "Throw a Pokeball!" form. It performs a HT
 
 # Question 3: What would you name your own Pokemon?
 
+lemon
+
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
 
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
