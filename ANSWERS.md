@@ -17,6 +17,8 @@ All these pokemon are wild. In home_controller.rb, @pokemon is assigned to a ran
 
 # Question 2a: What does the following line do "<%= button_to "Throw a Pokeball!", capture_path(id: @pokemon), :class => "button medium", :method => :patch %>"? Be specific about what "capture_path(id: @pokemon)" is doing. If you're having trouble, look at the Help section in the README.
 
+This generates a button with the text "Throw a Pokeball!" form. It performs a HTTP request that goes to a patch route, capture.
+
 # Question 3: What would you name your own Pokemon?
 
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
