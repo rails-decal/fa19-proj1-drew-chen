@@ -2,10 +2,13 @@
 <p>Name: <%= @trainer.name if @trainer.name %></p>
 <p>Email: <%= @trainer.email if @trainer.email %></p>
 <% for pokemon in @trainerPokemons%>
-	<% if pokemon and current_trainer %>
+	<% if pokemon and current_trainer and pokemon.trainer = current_trainer %>
   		<% if pokemon.ndex %>
    			<%= image_tag("pokemon/#{pokemon.ndex}.png", alt: "pokemon") %>
-			<br>Name: <%= pokemon.name %><br> Level: <%= pokemon.level %><br>
+			<br>Name: <%= pokemon.name %>
+			<br>Level: <%= pokemon.level %>
+			<br>Health: <%= pokemon.health %> <br>
+			<%= button_to "Damage!", damage_path(id: pokemon), :class => "button medium", :method => :patch %>
 		<% end %>
   <% end %>
 <% end %>
