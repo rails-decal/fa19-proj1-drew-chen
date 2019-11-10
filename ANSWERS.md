@@ -27,7 +27,7 @@ lemon
  
 
 The redirect_to method instead of being passed a path, can be passed a hash. This url_for is called on this hash to create a url which redirect_to uses.
-The hash I passed in was ::controller => 'trainers', :action => 'show', id: damaged_pokemon.trainer.id".
+The hash I passed in was ":controller => 'trainers', :action => 'show', id: damaged_pokemon.trainer.id".
 
 
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
